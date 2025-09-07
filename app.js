@@ -39,3 +39,18 @@ function agregaLista(){
 
     }
 }
+
+function sortearAmigo(){
+    if (listaAmigos.length===0){
+        //el arreglo esta vacio
+        alert("Agrega amigos antes de sortear");
+    } else {
+        //se ejecuta la funcion
+        let amigoGanador = Math.floor(Math.random()*listaAmigos.length); 
+        console.log(amigoGanador);
+        console.log(listaAmigos[amigoGanador]);
+        asignarTextoElemento('#resultado',`El amigo ganador es: ${listaAmigos[amigoGanador]}`);
+
+
+    }
+}
